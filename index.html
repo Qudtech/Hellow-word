@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Light</title>
+	<style type="text/css">
+		
+	</style>
+
+</head>
+<body>
+	
+<table>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><button onclick="sw(1)">Light On</button></td>
+		<td><img id="light" src="images/light-off.png" width="200" height="300" style="border:0;"></td>
+		<td><button  onclick="sw(0)">Light Off</button></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td style="text-align: center;">Bumb Status:<b id="Qudus">OFF</b><br/><button ></button></td>
+		<td></td>
+	</tr>
+</table>
+<script type="text/javascript">
+		var lightOne = document.getElementById("light");	
+			lightOne.scr ="images/light-off.png";	
+			var i; 
+		function sw(i){
+			if (i == 1) {
+			 	lightOne.src = "images/light-on.png";
+			 	document.getElementById("Qudus").innerHTML ="ON";
+
+		 	}else{
+		 		lightOne.src = "images/light-off.png";	
+		 		document.getElementById("Qudus").innerHTML ="OFF";
+		 	}
+		 	
+		}	
+	</script>
+</body>
+</html>
